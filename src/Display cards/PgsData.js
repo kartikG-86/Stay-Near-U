@@ -3,7 +3,7 @@ let CardData = [
     collegeName: "NSUT Delhi",
     uniqueId: "1",
     pgName: "Tokas",
-    ownerName: "Sakshi Tokas",
+    ownerName: "Mahesh Tokas",
     contactNumber: "9999199434",
     distance: "1.9km",
     price: ["₹ 18,500", "₹ 8,000", "₹ 7,000"],
