@@ -7,6 +7,9 @@ import {
   Typography,
 } from "@material-ui/core";
 import useStyles from "../styles";
+import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
+
 let Data = ["Owner", "Student"];
 
 const SignUpCard = () => {
@@ -15,22 +18,27 @@ const SignUpCard = () => {
     <>
       <Grid container spacing={4} justifyContent="center">
         {Data.map((data) => (
-          <Grid item md={6} sm={6} lg={6}>
+          <Grid item md={20} sm={40} lg={60}>
             <CardActionArea>
-              <Card
-                className={classes.Card}
-                style={{ width: "100%", height: "100%" }}
-              >
-                <CardContent>
-                  <Typography
-                    variant="body1"
-                    align="center"
-                    style={{ color: "green", margin: "1rem 0" }}
-                  >
-                    I'm A {data}
-                  </Typography>
-                </CardContent>
-              </Card>
+              <Link to={`SignUpComp ${data}`}>
+                <Card
+                  className={classes.Card}
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <Button variant="contained" appearance="ghost">
+                    <Typography
+                      variant="body1"
+                      align="center"
+                      style={{
+                        color: "black",
+                        margin: "1rem 0",
+                      }}
+                    >
+                      I'm A {data}
+                    </Typography>
+                  </Button>
+                </Card>
+              </Link>
             </CardActionArea>
           </Grid>
         ))}

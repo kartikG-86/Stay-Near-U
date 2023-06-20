@@ -28,8 +28,17 @@ const ResetPassword = (prop) => {
               style={{ textTransform: "none", marginTop: "2rem" }}
               align="center"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Dignissimos unde deleniti ad temporibus
+              A strong password is:
+              <br />
+              &#x2022; At least 12 characters long but 14 or more is better.
+              <br />
+              &#x2022; A combination of uppercase letters, lowercase letters,
+              numbers, and symbols.
+              <br />
+              &#x2022; Not a word that can be found in a dictionary or the name
+              of a person, character, product, or organization.
+              <br />
+              &#x2022;Significantly different from your previous passwords.
             </Typography>
           </Box>
 

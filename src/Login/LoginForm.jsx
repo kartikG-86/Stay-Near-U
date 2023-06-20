@@ -1,7 +1,8 @@
 import React from "react";
-import { Box, Grid, Link } from "@material-ui/core";
+import { Box, Grid} from "@material-ui/core";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const LoginForm = (prop) => {
   return (
@@ -51,9 +52,11 @@ const LoginForm = (prop) => {
         </Button>
         <Grid container style={{ marginTop: "2rem" }}>
           <Grid item xs onClick={prop.handlereset}>
-            Forgot password?
+            <Link to={"/Reset"}>Forgot password?</Link>
           </Grid>
-          <Grid item>{"Don't have an account? Sign Up"}</Grid>
+          <Link to={`/SignUp`}>
+            <Grid item>{"Don't have an account? Sign Up"}</Grid>
+          </Link>
         </Grid>
       </Box>
     </>
