@@ -1,15 +1,16 @@
 .Auth {
   text-align: center;
+  
 }
 
 .Auth-logo {
-  height: 40vmin;
+ 
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .Auth-logo {
-    animation: Auth-logo-spin infinite 20s linear;
+    animation: Auth-logo-spin infinite 2s linear;
   }
 }
 
