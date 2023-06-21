@@ -11,6 +11,7 @@ import PgMainDetails from "./PgMainDetails";
 import PgMap from "./PgMap";
 import HouseRules from "./HouseRules";
 import OwnerDetails from "./OwnerDetails";
+import Price from "./Price";
 
 const PgDetail = () => {
   const path = useParams();
@@ -28,15 +29,7 @@ const PgDetail = () => {
 
                 <PgMainDetails PG={pg} />
                 <Container>
-                  <Typography variant="h6">
-                    {pg.price.length > 1
-                      ? pg.price[pg.price.length - 1] + `/bed  -  `
-                      : ""}
-                    {pg.price[0]}
-                    {pg.OccupancyType[0] === "Single Sharing"
-                      ? "/room"
-                      : "/bed"}
-                  </Typography>
+                  <Price pg={pg} />
                 </Container>
 
                 <Container maxWidth="md" component="div">

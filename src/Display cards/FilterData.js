@@ -3,9 +3,9 @@ const FilterData = [
     FilterHeading: "Tenate Type",
     colName: [
       { name: "None", value: "None" },
-      { name: "Male", value: "Male" },
-      { name: "Female", value: "Female" },
-      { name: "Anyone", value: "Anyone" },
+      { name: "Boys", value: "Boys" },
+      { name: "Girls", value: "Girls" },
+      { name: "Both", value: "Both" },
     ],
   },
   {
@@ -51,29 +51,13 @@ const FilterData = [
       { name: "Triple Sharing", value: "Triple Sharing" },
     ],
   },
-  {
-    FilterHeading: "Max Area in (sqft)",
-    colName: [
-      { name: "None", value: "None" },
-      { name: "200", value: "200" },
-      { name: "250", value: "250" },
-      { name: "300", value: "300" },
-      { name: "350", value: "350" },
-      { name: "400", value: "400" },
-      { name: "425", value: "425" },
-      { name: "450", value: "450" },
-      { name: "500", value: "500" },
-      { name: "550", value: "550" },
-      { name: "600", value: "600" },
-    ],
-  },
+
   {
     FilterHeading: "Furnishing",
     colName: [
       { name: "None", value: "None" },
       { name: "Furnished", value: "Furnished" },
       { name: "Semi Furnished", value: "Semi Furnished" },
-      { name: "Unfurnished", value: "unfurnished" },
     ],
   },
 ];

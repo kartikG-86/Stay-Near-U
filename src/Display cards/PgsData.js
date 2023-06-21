@@ -23,7 +23,7 @@ let CardData = [
       "Power Backup",
     ],
     TenateType: ["Boys", "Girls"],
-    Furnishing: "Fully Furnished",
+    Furnishing: "Furnished",
     NoticePeriod: "1 Month",
     OccupancyType: ["Single Room", "Double Sharin", "Triple Sharing"],
     address: "Tokas Villa, B2/45-A Sewak Park, Dwarka Mor New Delhi",
@@ -949,7 +949,7 @@ let CardData = [
       "Power Backup",
     ],
     TenateType: ["Boys"],
-    Furnishing: "Fully Furnished",
+    Furnishing: "Furnished",
     LockInPeriod: "3 Months",
     OccupancyType: ["Single Room", "Double Sharing"],
     address:
@@ -987,7 +987,7 @@ let CardData = [
       "Power Backup",
     ],
     TenateType: ["Boys", "Girls"],
-    Furnishing: "Fully Furnished",
+    Furnishing: "Furnished",
     LockInPeriod: "3 Months",
     OccupancyType: ["Single Room", "Double Sharing", "Triple Sharing"],
     address:
@@ -1139,7 +1139,7 @@ let CardData = [
       "Power Backup",
     ],
     TenateType: ["Boys", "Girls"],
-    Furnishing: "Fully Furnished",
+    Furnishing: "Furnished",
     LockInPeriod: "3 Months",
     OccupancyType: ["Single Room", "Double Sharing", "Triple Sharing"],
     address:
@@ -1911,7 +1911,7 @@ let CardData = [
       "Power Backup",
     ],
     TenateType: ["Boys"],
-    Furnishing: "Fully Furnished",
+    Furnishing: "Furnished",
     LockInPeriod: "6 Months",
     OccupancyType: ["Double Sharing", "Triple Sharing"],
     address:
@@ -1947,7 +1947,7 @@ let CardData = [
       "Power Backup",
     ],
     TenateType: ["Boys", "Girls"],
-    Furnishing: "Fully Furnished",
+    Furnishing: "Furnished",
     LockInPeriod: "3 Months",
     OccupancyType: ["Single Room", "Double Sharing", "Triple Sharing"],
     address: "lot No. 121-123, Telecom Nagar Extension, Gachibowli Hyderabad",
