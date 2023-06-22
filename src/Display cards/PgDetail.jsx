@@ -18,6 +18,7 @@ const PgDetail = () => {
   console.log(houseRules);
 
   console.log(path);
+
   return (
     <>
       <Container style={{ marginTop: "3rem" }}>

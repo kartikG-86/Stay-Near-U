@@ -6,7 +6,7 @@ let CardData = [
     ownerName: "Mahesh Tokas",
     contactNumber: "9999199434",
     distance: "1.9km",
-    price: ["₹ 18,500", "₹ 8,000", "₹ 7,000"],
+    price: ["18,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -44,7 +44,7 @@ let CardData = [
     ownerName: "Rahul Sharma",
     contactNumber: "+91 7669917474",
     distance: "1km",
-    price: ["₹ 23,100", "₹ 13,000", "₹ 10,000"],
+    price: ["23,100", "13,000", "10,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -83,7 +83,7 @@ let CardData = [
     ownerName: "BKS Rathore",
     contactNumber: "+91 6127930291",
     distance: "1.1km",
-    price: ["₹ 6,500"],
+    price: ["6,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -122,7 +122,7 @@ let CardData = [
     ownerName: "Ashok Kumar Gupta",
     contactNumber: "+91 8707193053",
     distance: "5 km",
-    price: ["₹ 9,000", "₹ 7,000"],
+    price: ["9,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -160,7 +160,7 @@ let CardData = [
     ownerName: "Vandana",
     contactNumber: "09015281381",
     distance: "2.1km",
-    price: ["₹ 10,500", "₹9,000"],
+    price: ["10,500", " 9,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -199,7 +199,7 @@ let CardData = [
     ownerName: "Vinny Sikri",
     contactNumber: "9013309380",
     distance: "2.2 km",
-    price: ["₹ 6,999", "₹ 5,499", "₹ 4,999"],
+    price: ["6,999", "5,499", "4,999"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -238,7 +238,7 @@ let CardData = [
     ownerName: "Rajesh Singh",
     contactNumber: "9560262343",
     distance: "1.7 km",
-    price: ["₹ 11,100"],
+    price: ["11,100"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -275,7 +275,7 @@ let CardData = [
     ownerName: "Vinod Kumar",
     contactNumber: "7419889177",
     distance: "2.0km",
-    price: ["₹ 8,500", "7500"],
+    price: ["8,500", "7500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -314,7 +314,7 @@ let CardData = [
     ownerName: "Rajesh",
     contactNumber: "7947169204",
     distance: "2.2km",
-    price: ["₹ 11,100"],
+    price: ["11,100"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -352,7 +352,7 @@ let CardData = [
     ownerName: "Vineeta",
     contactNumber: "9910447191",
     distance: "1.6km",
-    price: ["₹ 9,000", "₹ 7,000"],
+    price: ["9,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -393,7 +393,7 @@ let CardData = [
     pgName: "Your-Space",
     contactNumber: ["+91 8882048879", "+91 8989427629"],
     distance: "1.3 Km",
-    price: ["₹ 21,630", "₹12,670", "₹ ₹10,990"],
+    price: ["21,630", " 12,670", " 10,990"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -430,7 +430,7 @@ let CardData = [
     ownerName: "Anika Kapoor",
     contactNumber: "+91 9999966177",
     distance: "750m",
-    price: ["₹ 15,500", "₹ 11,000", "₹ 8,000"],
+    price: ["15,500", "11,000", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -469,7 +469,7 @@ let CardData = [
     ownerName: "Neha Gupta",
     contactNumber: "+91 74195594796",
     distance: "1km",
-    price: ["₹ 11,500", "₹ 9,000", "₹ 7,000"],
+    price: ["11,500", "9,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -508,7 +508,7 @@ let CardData = [
     ownerName: "Rishi Gupta",
     contactNumber: "+91 8700310820",
     distance: "1km",
-    price: ["₹ 16,500", "₹ 8,000", "₹ 4,000"],
+    price: ["16,500", "8,000", "4,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -545,7 +545,7 @@ let CardData = [
     ownerName: "Ananya Kapoor",
     contactNumber: "+91 8812008451",
     distance: "800m",
-    price: ["₹ 12,500", "₹ 7,000"],
+    price: ["12,500", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -584,7 +584,7 @@ let CardData = [
     ownerName: "Mohan das",
     contactNumber: "+91 9433124560",
     distance: "2.1km",
-    price: ["₹ 8,000", "₹ 7,000"],
+    price: ["8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -623,7 +623,7 @@ let CardData = [
     ownerName: "Kavya Singh",
     contactNumber: "9910104228",
     distance: "1km",
-    price: ["₹ 9,000", "₹ 6,000"],
+    price: ["9,000", "6,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -661,7 +661,7 @@ let CardData = [
     ownerName: "Aradhya Patel",
     contactNumber: "+91 9910104228",
     distance: "2km",
-    price: ["₹ 8,000", "₹ 6,000"],
+    price: ["8,000", "6,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -700,7 +700,7 @@ let CardData = [
     ownerName: "Sanjay Patel",
     contactNumber: "+91 9810452463",
     distance: "1.1km",
-    price: ["₹ 9,000"],
+    price: ["9,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -738,7 +738,7 @@ let CardData = [
     ownerName: "Aisha Khan",
     contactNumber: "+91 6127967178",
     distance: "850 m",
-    price: ["₹ 13,500", "₹ 8,000"],
+    price: ["13,500", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -779,7 +779,7 @@ let CardData = [
     ownerName: "Malini Iyer",
     contactNumber: "9350460736",
     distance: "1.5km",
-    price: ["₹ 9,000", "₹ 7,000"],
+    price: ["9,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -818,7 +818,7 @@ let CardData = [
     ownerName: "Nikhil Patel",
     contactNumber: "+91 9999222070",
     distance: "1.6 km",
-    price: ["₹ 10,000", "₹ 8,000"],
+    price: ["10,000", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -855,7 +855,7 @@ let CardData = [
     ownerName: "Aman Bhatia",
     contactNumber: "+91 9312235201",
     distance: "1.3km",
-    price: ["₹ 12,000", "₹ 9,500", "₹ 8,700"],
+    price: ["12,000", "9,500", "8,700"],
     Facilities: [
       "Fully AC",
       "WiFi",
@@ -894,7 +894,7 @@ let CardData = [
     ownerName: "Tina Kapoor",
     contactNumber: "9485760456",
     distance: "1.8 km",
-    price: ["₹ 8,000", "₹ 7,000"],
+    price: ["8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -932,7 +932,7 @@ let CardData = [
     ownerName: "Priya Gupta",
     contactNumber: "9863425479",
     distance: "4km",
-    price: ["₹ 18,500", "₹ 15,000"],
+    price: ["18,500", "15,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -970,7 +970,7 @@ let CardData = [
     ownerName: "Naina Patel",
     contactNumber: "9999443292",
     distance: "1km",
-    price: ["₹ 9,500", "₹ 78,00", "₹ 72,00"],
+    price: ["9,500", "78,00", "72,00"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1008,7 +1008,7 @@ let CardData = [
     ownerName: "Meera Pandey",
     contactNumber: "9999947017",
     distance: "1.8 km",
-    price: ["₹ 18,500", "₹ 8,000"],
+    price: ["18,500", "8,000"],
     Facilities: [
       "Fully AC",
       "WiFi",
@@ -1044,7 +1044,7 @@ let CardData = [
     ownerName: "Rajat Chatterjee",
     contactNumber: "94xxx456",
     distance: "1.9 km",
-    price: ["₹ 7,000", "₹ 6,000", "₹ 5,500"],
+    price: ["7,000", "6,000", "5,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1082,7 +1082,7 @@ let CardData = [
     ownerName: "Divya Singh",
     contactNumber: "9891342334",
     distance: "0.5km",
-    price: ["₹ 10,500", "₹ 8,000"],
+    price: ["10,500", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1122,7 +1122,7 @@ let CardData = [
     ownerName: "Rohan Suri",
     contactNumber: "8197441206",
     distance: "1.7km",
-    price: ["₹ 10,500", "₹ 8,500", "₹ 7,000"],
+    price: ["10,500", "8,500", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1163,7 +1163,7 @@ let CardData = [
     ownerName: "Jaya Shah",
     contactNumber: "+91 61279 38019",
     distance: "2km",
-    price: ["₹ 10,000", "₹ 9,000"],
+    price: ["10,000", "9,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1200,7 +1200,7 @@ let CardData = [
     ownerName: "Vikram Malhotra",
     contactNumber: "7009007227",
     distance: "3.9km",
-    price: ["₹ 18,500", "₹ 8,000", "₹ 7,000"],
+    price: ["18,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1238,7 +1238,7 @@ let CardData = [
     ownerName: "Siddharth Chaudhary",
     contactNumber: "7419594627",
     distance: "1.6km",
-    price: ["₹ 15,000", "₹ 13,000", "₹ 12,000"],
+    price: ["15,000", "13,000", "12,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1277,7 +1277,7 @@ let CardData = [
     ownerName: "Deepa Mehta",
     contactNumber: "9811595553",
     distance: "4km",
-    price: ["₹ 18,500", "₹ 8,000", "₹ 7,000"],
+    price: ["18,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1316,7 +1316,7 @@ let CardData = [
     ownerName: "Smita Desai",
     contactNumber: "8050800147",
     distance: "4.0km",
-    price: ["₹ 10,500", "₹ 7,500"],
+    price: ["10,500", "7,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1355,7 +1355,7 @@ let CardData = [
     ownerName: "Aryan Shah",
     contactNumber: "9711119521",
     distance: "5.0 km",
-    price: ["₹ 8,000", "₹ 7,000"],
+    price: ["8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1394,7 +1394,7 @@ let CardData = [
     ownerName: "Ajay Mehta",
     contactNumber: "7838630282",
     distance: "1km",
-    price: ["₹ 12,500", "₹ 8,500", "₹ 7,500"],
+    price: ["12,500", "8,500", "7,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1432,7 +1432,7 @@ let CardData = [
     ownerName: "Simran Kaur",
     contactNumber: "8130669826",
     distance: "3.3Km",
-    price: ["₹ 8,000"],
+    price: ["8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1471,7 +1471,7 @@ let CardData = [
     ownerName: "Ravi Kumar",
     contactNumber: "9999973313",
     distance: "1km",
-    price: ["₹ 8,000"],
+    price: ["8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1510,7 +1510,7 @@ let CardData = [
     ownerName: "Simran Kaur",
     contactNumber: "9868167522",
     distance: "1.9km",
-    price: ["₹ 8,000", "₹ 7,000"],
+    price: ["8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1550,7 +1550,7 @@ let CardData = [
     ownerName: "Abhishek Rao",
     contactNumber: "9412548556",
     distance: "5.0km",
-    price: ["₹ 18,699", "18,599"],
+    price: ["18,699", "18,599"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1588,7 +1588,7 @@ let CardData = [
     ownerName: "Maya Sharma",
     contactNumber: "+91 7979922877",
     distance: "6.0km",
-    price: ["₹ 18,199"],
+    price: ["18,199"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1626,7 +1626,7 @@ let CardData = [
     ownerName: "Nikhil Patel",
     contactNumber: "+91 8826662688",
     distance: "3.9 km",
-    price: ["₹ 8,000", "₹ 7,000"],
+    price: ["8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1663,7 +1663,7 @@ let CardData = [
     ownerName: "Karthik Reddy",
     contactNumber: "+91 8802457480",
     distance: "1.8 km",
-    price: ["₹ 11,500", "₹ 9,000"],
+    price: ["11,500", "9,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1701,7 +1701,7 @@ let CardData = [
     ownerName: "Deepak Mehta",
     contactNumber: "+91 8123569170",
     distance: "3km",
-    price: ["₹ 11,500", "₹ 8,000", "₹ 7,000"],
+    price: ["11,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1739,7 +1739,7 @@ let CardData = [
     ownerName: "Anand Mehta",
     contactNumber: "+91 8123417610",
     distance: "2km",
-    price: ["₹ 18,500", "₹ 8,000", "₹ 7,000"],
+    price: ["18,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1778,7 +1778,7 @@ let CardData = [
     ownerName: "Arnav Gupta",
     contactNumber: "+91 7419879822",
     distance: "1km",
-    price: ["₹ 8,000"],
+    price: ["8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1817,7 +1817,7 @@ let CardData = [
     ownerName: "Smita Desai",
     contactNumber: "+91 81236 93495",
     distance: " 4.9 Km",
-    price: ["₹ 8,000", "₹ 7,000"],
+    price: ["8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1856,7 +1856,7 @@ let CardData = [
     ownerName: "Sameer Patel",
     contactNumber: "+(91) 9654961405",
     distance: "1km",
-    price: ["₹ 8,000"],
+    price: ["8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1894,7 +1894,7 @@ let CardData = [
     ownerName: "Priya Gupta",
     contactNumber: "8147421405",
     distance: "1km",
-    price: ["₹ 8,500", "₹ 7,500"],
+    price: ["8,500", "7,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1932,7 +1932,7 @@ let CardData = [
     ownerName: "Mahindra Reddy",
     contactNumber: "9876543210",
     distance: "1.4km",
-    price: ["₹ 18,500", "₹ 11,000", "₹ 8,000"],
+    price: ["18,500", "11,000", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -1967,7 +1967,7 @@ let CardData = [
     ownerName: "Shivanshi Gumma",
     contactNumber: "9834586723",
     distance: "1.1km",
-    price: ["₹ 18,000", "₹ 9,000"],
+    price: ["18,000", "9,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2007,7 +2007,7 @@ let CardData = [
     ownerName: "Madhava Rao",
     contactNumber: "9988776655",
     distance: "1.9km",
-    price: ["₹ 27,000"],
+    price: ["27,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2046,7 +2046,7 @@ let CardData = [
     ownerName: "Rahul Dubey",
     contactNumber: "9966332211",
     distance: "1km",
-    price: ["₹ 18,500", "₹ 11,000", "₹ 8,000"],
+    price: ["18,500", "11,000", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2081,7 +2081,7 @@ let CardData = [
     ownerName: "Preeti Chauhan",
     contactNumber: "9812345678",
     distance: "1km",
-    price: ["₹ 16,000", "₹ 10,000"],
+    price: ["16,000", "10,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2119,7 +2119,7 @@ let CardData = [
     ownerName: "Raj",
     contactNumber: "9990001119",
     distance: "0.9km",
-    price: ["₹ 20,500", "₹ 16,000", "₹ 10,000"],
+    price: ["20,500", "16,000", "10,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2155,7 +2155,7 @@ let CardData = [
     ownerName: "Isthara Living",
     contactNumber: "9898989898",
     distance: "1.1km",
-    price: ["₹ 16,500", "₹ 12,000", "₹ 5,000"],
+    price: ["16,500", "12,000", "5,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2193,7 +2193,7 @@ let CardData = [
     ownerName: "Amit",
     contactNumber: "9944332211",
     distance: "0.6km",
-    price: ["₹ 12,500", "₹ 6,000"],
+    price: ["12,500", "6,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2231,7 +2231,7 @@ let CardData = [
     ownerName: "Syam",
     contactNumber: "9797979797 ",
     distance: "1.3km",
-    price: ["₹ 10,500"],
+    price: ["10,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2266,7 +2266,7 @@ let CardData = [
     ownerName: "Suryanarayana",
     contactNumber: "9377777777",
     distance: "1.3km",
-    price: ["₹ 18,500", "₹ 8,000", "₹ 7,000"],
+    price: ["18,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2303,7 +2303,7 @@ let CardData = [
     ownerName: "Amit Gupta",
     contactNumber: "9765432109",
     distance: "0.9km",
-    price: ["₹ 20,500", "₹ 16,000", "₹ 8,000"],
+    price: ["20,500", "16,000", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2340,7 +2340,7 @@ let CardData = [
     ownerName: "Amit",
     contactNumber: "9545454545",
     distance: "0.8km",
-    price: ["₹ 25,000", "₹ 12,000"],
+    price: ["25,000", "12,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2375,7 +2375,7 @@ let CardData = [
     ownerName: "Manas",
     contactNumber: "9424242424",
     distance: "1km",
-    price: ["₹ 19,500"],
+    price: ["19,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2411,7 +2411,7 @@ let CardData = [
     ownerName: "Sameer",
     contactNumber: "9303030303",
     distance: "2km",
-    price: ["₹ 25,000", "₹ 12,000", "₹ 9,000"],
+    price: ["25,000", "12,000", "9,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2449,7 +2449,7 @@ let CardData = [
     ownerName: "Sharukh Sharma",
     contactNumber: "9181818181",
     distance: "0.8km",
-    price: ["₹ 30,000", "₹ 16,000"],
+    price: ["30,000", "16,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2484,7 +2484,7 @@ let CardData = [
     ownerName: "Sandeep",
     contactNumber: "9060606060",
     distance: "0.8km",
-    price: ["₹ 22,500"],
+    price: ["22,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2522,7 +2522,7 @@ let CardData = [
     ownerName: "Guddu Khan",
     contactNumber: "8939393939",
     distance: "0.3km",
-    price: ["₹ 20,500", "₹ 16,000", "₹ 7,000"],
+    price: ["20,500", "16,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2558,7 +2558,7 @@ let CardData = [
     ownerName: "Oxotel Team",
     contactNumber: "8818181818",
     distance: "0.5km",
-    price: ["₹ 26,000", "₹ 10,000"],
+    price: ["26,000", "10,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2594,7 +2594,7 @@ let CardData = [
     ownerName: "Sudarshan Agarwal",
     contactNumber: "8696969696",
     distance: "0.3km",
-    price: ["₹ 30,000", "₹ 12,000", "₹ 9,000"],
+    price: ["30,000", "12,000", "9,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2633,7 +2633,7 @@ let CardData = [
     ownerName: "Chandan",
     contactNumber: "8575757575",
     distance: "3km",
-    price: ["₹ 24,000", "₹ 17,000", "₹ 10,000"],
+    price: ["24,000", "17,000", "10,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2670,7 +2670,7 @@ let CardData = [
     ownerName: "Yogesh",
     contactNumber: "8454545454",
     distance: "0.2km",
-    price: ["₹ 18,500", "₹ 8,000", "₹ 7,000"],
+    price: ["18,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2708,7 +2708,7 @@ let CardData = [
     ownerName: "Zile Singh",
     contactNumber: "9876543210",
     distance: "0.7km",
-    price: ["₹ 18,500", "₹ 8,000"],
+    price: ["18,500", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2746,7 +2746,7 @@ let CardData = [
     ownerName: "Raman",
     contactNumber: "9834586723",
     distance: "2.2km",
-    price: ["₹ 18,500"],
+    price: ["18,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2784,7 +2784,7 @@ let CardData = [
     ownerName: "Sanjay",
     contactNumber: "9988776655",
     distance: "2.4km",
-    price: ["₹ 17,500", "₹ 9,000", "₹ 7,000"],
+    price: ["17,500", "9,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2821,7 +2821,7 @@ let CardData = [
     ownerName: "Ajay Kumar",
     contactNumber: "9966332211",
     distance: "1.5km",
-    price: ["₹ 18,500", "₹ 8,000"],
+    price: ["18,500", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2858,7 +2858,7 @@ let CardData = [
     ownerName: "Bhupinder",
     contactNumber: "9812345678",
     distance: "0.32km",
-    price: ["₹ 18,500"],
+    price: ["18,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2895,7 +2895,7 @@ let CardData = [
     ownerName: "Baldev",
     contactNumber: "9898989898",
     distance: "0.5km",
-    price: ["₹ 15,500", "₹ 7,000", "₹ 4,000"],
+    price: ["15,500", "7,000", "4,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2932,7 +2932,7 @@ let CardData = [
     ownerName: "Devendra ",
     contactNumber: "09015281381",
     distance: "1.2km",
-    price: ["₹ 17,500", "₹ 9,000"],
+    price: ["17,500", "9,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -2969,7 +2969,7 @@ let CardData = [
     ownerName: "Dharmendra",
     contactNumber: "9013309380",
     distance: "3km",
-    price: ["₹ 18,500"],
+    price: ["18,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3006,7 +3006,7 @@ let CardData = [
     ownerName: "Pankaj",
     contactNumber: "9867564654",
     distance: "2.4km",
-    price: ["₹ 18,500", "₹ 8,000", "₹ 7,000"],
+    price: ["18,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3044,7 +3044,7 @@ let CardData = [
     ownerName: "Mukesh",
     contactNumber: "9560262343",
     distance: "1.2km",
-    price: ["₹ 23,500", "₹ 15,000", "₹ 7,000"],
+    price: ["23,500", "15,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3083,7 +3083,7 @@ let CardData = [
     ownerName: "Omkar",
     contactNumber: "7419889177",
     distance: "1km",
-    price: ["₹ 18,500", "₹ 8,000"],
+    price: ["18,500", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3121,7 +3121,7 @@ let CardData = [
     ownerName: "Pradeep",
     contactNumber: "7947169204",
     distance: "0.4km",
-    price: ["₹ 18,500", "₹ 8,000", "₹ 7,000"],
+    price: ["18,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3160,7 +3160,7 @@ let CardData = [
     ownerName: "Madhuri",
     contactNumber: "9910447191",
     distance: "1.5km",
-    price: ["₹ 14,500", "₹ 9,000", "₹ 7,000"],
+    price: ["14,500", "9,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3198,7 +3198,7 @@ let CardData = [
     ownerName: "Anand",
     contactNumber: "9999199434",
     distance: "1.8km",
-    price: ["₹ 18,500", "₹ 8,000"],
+    price: ["18,500", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3236,7 +3236,7 @@ let CardData = [
     ownerName: "Rakesh",
     contactNumber: "7669917474",
     distance: "2.4km",
-    price: ["₹ 18,500"],
+    price: ["18,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3274,7 +3274,7 @@ let CardData = [
     ownerName: "Pradeep",
     contactNumber: "6127930291",
     distance: "2.5km",
-    price: ["₹ 19,000", "₹ 13,000", "₹ 10,000"],
+    price: ["19,000", "13,000", "10,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3311,7 +3311,7 @@ let CardData = [
     ownerName: "Girish",
     contactNumber: "8707193053",
     distance: "1.3km",
-    price: ["₹ 15,500", "₹ 7,000"],
+    price: ["15,500", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3350,7 +3350,7 @@ let CardData = [
     ownerName: "Subhash",
     contactNumber: "09015281381",
     distance: "0.2km",
-    price: ["₹ 18,500"],
+    price: ["18,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3389,7 +3389,7 @@ let CardData = [
     ownerName: "Badrinarayan",
     contactNumber: "9988776655",
     distance: "1km",
-    price: ["₹ 18,500", "₹ 8,000", "₹ 7,000"],
+    price: ["18,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3427,7 +3427,7 @@ let CardData = [
     ownerName: "Chandrakant",
     contactNumber: "9876543210",
     distance: "2.4km",
-    price: ["₹ 17,500", "₹ 8,000", "₹ 7,000"],
+    price: ["17,500", "8,000", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3465,7 +3465,7 @@ let CardData = [
     ownerName: "Vinod",
     contactNumber: "9875876843",
     distance: "0.3km",
-    price: ["₹ 18,500", "₹ 8,000"],
+    price: ["18,500", "8,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3502,7 +3502,7 @@ let CardData = [
     ownerName: "Rakesh",
     contactNumber: "8795874539",
     distance: "3km",
-    price: ["₹ 18,500"],
+    price: ["18,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3540,7 +3540,7 @@ let CardData = [
     ownerName: "Sanjana",
     contactNumber: "8965373284",
     distance: "2.2km",
-    price: ["₹ 23,500", "₹ 17,000", "₹ 12,000"],
+    price: ["23,500", "17,000", "12,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3578,7 +3578,7 @@ let CardData = [
     ownerName: "Kritika",
     contactNumber: "8463294657",
     distance: "1km",
-    price: ["₹ 18,500", "₹ 7,000"],
+    price: ["18,500", "7,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3617,7 +3617,7 @@ let CardData = [
     ownerName: "Jhanvi",
     contactNumber: "9878650101",
     distance: "0.3km",
-    price: ["₹ 13,000"],
+    price: ["13,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3655,7 +3655,7 @@ let CardData = [
     ownerName: "Ajay",
     contactNumber: "9543656545",
     distance: "2.2km",
-    price: ["₹ 12,000", "₹ 8,000", "₹ 5,000"],
+    price: ["12,000", "8,000", "5,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3692,7 +3692,7 @@ let CardData = [
     ownerName: "Kartik",
     contactNumber: "9845909076",
     distance: "1.6km",
-    price: ["₹ 13,000", "₹ 6,000"],
+    price: ["13,000", "6,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3731,7 +3731,7 @@ let CardData = [
     ownerName: "Deepanshu",
     contactNumber: "959998688",
     distance: "1.8km",
-    price: ["₹ 18,500"],
+    price: ["18,500"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
@@ -3769,7 +3769,7 @@ let CardData = [
     ownerName: "Rahul",
     contactNumber: "9135273590",
     distance: "1.3km",
-    price: ["₹ 16,500", "₹ 12,000", "₹ 9,000"],
+    price: ["16,500", "12,000", "9,000"],
     Facilities: [
       "AC/Non AC",
       "WiFi",
