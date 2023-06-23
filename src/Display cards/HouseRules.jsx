@@ -30,13 +30,6 @@ const HouseRules = (props) => {
                 margin: "10px",
                 borderRadius: "5px",
               }}
-              //   fontWeight="bold"
-              //   color="blue.400"
-              //   fontSize="l"
-              //   p="2"
-              //   bg="gray.200"
-              //   m="1"
-              //   borderRadius="5"
             >
               {item}
             </Text>

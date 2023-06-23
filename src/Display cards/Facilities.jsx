@@ -41,7 +41,7 @@ const Facilities = (prop) => {
     <>
       <Grid container spacing={4} justifyContent="center">
         {prop.facilities.map((facility, index) => (
-          <Grid item md={3} xs={4} align="center">
+          <Grid item md={3} xs={6} align="center">
             {facility == "AC/Non AC" || facility == "Fully AC" ? (
               <div style={{ width: "4rem" }}>
                 <Lottie animationData={Ac} loop={true} />

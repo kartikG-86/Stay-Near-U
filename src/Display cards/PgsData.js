@@ -25,7 +25,7 @@ let CardData = [
     TenateType: ["Boys", "Girls"],
     Furnishing: "Furnished",
     NoticePeriod: "1 Month",
-    OccupancyType: ["Single Room", "Double Sharin", "Triple Sharing"],
+    OccupancyType: ["Single Room", "Double Sharing", "Triple Sharing"],
     address: "Tokas Villa, B2/45-A Sewak Park, Dwarka Mor New Delhi",
 
     imageUrl: {

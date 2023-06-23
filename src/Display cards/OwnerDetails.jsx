@@ -13,14 +13,17 @@ const OwnerDetails = (prop) => {
   return (
     <>
       <Container
-        maxWidth="md"
         align="center"
-        style={{ background: "#EEEEEE", margin: "2rem 0", padding: "1rem" }}
+        style={{
+          background: "#EEEEEE",
+          margin: "2rem 0",
+          padding: "0.5rem",
+        }}
       >
         <Grid container spacing={1} align="center">
           <Grid item md={2} xs={2}>
-            <Avatar style={{background:"black"}}>
-              <PersonIcon style={{color:"white"}}/>
+            <Avatar style={{ background: "black" }}>
+              <PersonIcon style={{ color: "white" }} />
             </Avatar>
           </Grid>
 
@@ -34,7 +37,7 @@ const OwnerDetails = (prop) => {
           </Grid>
 
           <Grid item md={4} xs={5}>
-            <Button onClick={handleClick} style={{color:"black"}}>
+            <Button onClick={handleClick} style={{ color: "black" }}>
               {click ? prop.contact : "Contact"}
             </Button>
           </Grid>

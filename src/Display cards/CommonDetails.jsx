@@ -51,6 +51,12 @@ const CommonDetails = (prop) => {
             </Typography>
             <Typography variant="body2">{prop.noticePeriod}</Typography>
           </Grid>
+          <Grid item md={5} xs={12} style={{ margin: "1rem" }}>
+            <Typography variant="body1" style={{ fontWeight: "bold" }}>
+              Furnishing Status
+            </Typography>
+            <Typography variant="body2">{prop.furnishing}</Typography>
+          </Grid>
         </Grid>
       </Container>
     </>
