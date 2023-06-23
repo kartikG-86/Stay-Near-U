@@ -153,11 +153,11 @@ const FilterFeature = (prop) => {
                           style={{ marginTop: "0.7rem" }}
                         >
                           {card.price.length > 1
-                            ? `₹` +
+                            ? `₹ ` +
                               card.price[card.price.length - 1] +
                               `/bed  -  `
                             : ""}
-                          ₹{card.price[0]}
+                          ₹ {card.price[0]}
                           {card.OccupancyType[0] === "Single Room"
                             ? "/room"
                             : "/bed"}
