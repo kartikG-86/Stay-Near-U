@@ -128,7 +128,12 @@ const FilterFeature = (prop) => {
                       to={`/${card.collegeName}/${card.pgName}/details`}
                       style={{ textDecoration: "none", color: "black" }}
                     > */}
-                    <Card>
+                    <Card
+                      style={{
+                        borderTopLeftRadius: "4rem",
+                        borderBottomRightRadius: "4rem",
+                      }}
+                    >
                       {/* <CardMedia
                         className={classes.cardMedia}
                         image={card.imageUrl.bedroom}

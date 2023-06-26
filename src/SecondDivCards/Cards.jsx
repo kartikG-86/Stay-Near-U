@@ -24,7 +24,12 @@ const Cards = (prop) => {
               style={{ textDecoration: "none", color: "black" }}
             >
               <CardActionArea>
-                <Card>
+                <Card
+                  style={{
+                    borderTopLeftRadius: "2rem",
+                    borderBottomRightRadius: "2rem",
+                  }}
+                >
                   <CardMedia
                     className={classes.cardMedia}
                     image={page.imageUrl}
