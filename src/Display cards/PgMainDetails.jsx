@@ -19,7 +19,7 @@ const PgMainDetails = (prop) => {
             <Button
               style={{ margin: "1rem 0.5rem" }}
               variant="contained"
-              color={gender == "Boys" ? "primary" : "success"}
+              color={gender === "Boys" ? "primary" : "success"}
               size="small"
             >
               {gender}
