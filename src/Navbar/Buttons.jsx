@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
+import { Center } from "@chakra-ui/layout";
 
 const Buttons = (prop) => {
   return (
@@ -9,9 +10,11 @@ const Buttons = (prop) => {
         color="secondary"
         style={{
           marginLeft: prop.mrg,
+          marginRight: "8px",
+          justifyContent: Center,
           color: "white",
           backgroundColor: prop.backColor,
-          borderRadius: "2rem",
+          borderRadius: "1rem",
         }}
         onClick={prop.click}
       >
