@@ -76,6 +76,13 @@ const NavBarItems = (prop) => {
               </Tabs>
 
               <Link
+                style={{ color: "black", textDecoration: "none" }}
+                to="/NewPg"
+              >
+                <Buttons text="List With Us" backColor="#9016928c" mrg="40px" />
+              </Link>
+
+              <Link
                 style={{ color: "white", textDecoration: "none" }}
                 to="/signUp"
               >
@@ -86,7 +93,7 @@ const NavBarItems = (prop) => {
                 style={{ color: "white", textDecoration: "none" }}
                 to="/login"
               >
-                <Buttons text="Login" backColor="#e53935" mrg="10px" />
+                <Buttons text="Login" backColor="#e53935" mrg="auto" />
               </Link>
             </>
           )}
