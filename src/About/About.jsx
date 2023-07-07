@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@material-ui/core";
-import MainImage from "./MainImage";
+//import MainImage from "./MainImage";
 import Heading from "./Heading";
 import AboutPara from "./AboutPara";
 import LiveFacts from "./LiveFacts";
@@ -10,7 +10,7 @@ import Footer from "../Footer/Footer";
 const About = () => {
   return (
     <>
-      <MainImage />
+      {/* <MainImage /> */}
       <Container>
         <Heading text="About Us" align="center" margin="6rem" font="light" />
         <AboutPara />
