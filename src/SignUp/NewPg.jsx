@@ -2,22 +2,22 @@ import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { addPg, getAllPg } from "../api";
-import { Link } from "react-router-dom";
-import Avatar from "@mui/material/Avatar";
+// import { Link } from "react-router-dom";
+// import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import { Grid, Radio } from "@mui/material";
+// import FormControlLabel from "@mui/material/FormControlLabel";
+// import Checkbox from "@mui/material/Checkbox";
+import { Grid } from "@mui/material";
 // import Link from '@mui/material/Link';
 // import Grid from '@mui/material/Grid';
 // import Box from '@mui/material/Box';
 // import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from "@mui/material/Typography";
-// import Container from '@mui/material/Container';
+import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { blue, blueGrey, red } from "@mui/material/colors";
+//import { blue, blueGrey, red } from "@mui/material/colors";
 // import { MuiThemeProvider } from "@material-ui/core";
 // import { Margin } from "@mui/icons-material";
 // import { red } from "@mui/material/colors";
@@ -138,302 +138,330 @@ const NewPg = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <container>
+      <Container>
         <Grid>
-          <div>
-            <form
-              onSubmit={handleSubmit(onSubmit)}
-              method="post"
-              encType="multipart/form-data"
-            >
-              <div>
-                <Typography
-                  component="h1"
-                  variant="h5"
-                  align="center"
-                  fontSize={35}
-                  padding={3}
-                >
-                  Fill the PG Details
-                </Typography>
-                <TextField
-                  fullWidth
-                  {...register("pgName", { required: true })}
-                  id="pgName"
-                  label="Pg Name"
-                  variant="filled"
-                  color="success"
-                  margin="normal"
-                  helperText="Please Enter your PG Name"
-                />
-                {errors.pgName && <span>*required field</span>}
-              </div>
+          {/* <div> */}
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            method="post"
+            encType="multipart/form-data"
+          >
+            <Grid>
+              <Typography
+                component="h1"
+                variant="h5"
+                align="center"
+                fontSize={35}
+                padding={3}
+              >
+                Fill the PG Details
+              </Typography>
+            </Grid>
 
-              <div>
-                <TextField
-                  fullWidth
-                  {...register("ownerName", { required: true })}
-                  id="ownerName"
-                  label="Owner Name"
-                  variant="filled"
-                  color="success"
-                  margin="normal"
-                  helperText="Please Enter the Owner's Name"
-                />
-                {errors.ownerName && <span>*required field</span>}
-              </div>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                fullWidth
+                {...register("pgName", { required: true })}
+                id="pgName"
+                label="Pg Name"
+                required
+                variant="filled"
+                color="success"
+                margin="normal"
+                helperText="Please Enter your PG Name"
+              />
+              {errors.pgName && <span>*required field</span>}
+            </Grid>
 
-              <div>
-                <TextField
-                  id="contactNumber"
-                  fullWidth
-                  inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
-                  {...register("contactNumber", { required: true })}
-                  label="Contact Number"
-                  variant="filled"
-                  color="success"
-                  margin="normal"
-                  helperText="Please Enter your Contact Number"
-                />
-                {errors.contactNumber && <span>*required field</span>}
-              </div>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                fullWidth
+                {...register("ownerName", { required: true })}
+                id="ownerName"
+                required
+                label="Owner Name"
+                variant="filled"
+                color="success"
+                margin="normal"
+                helperText="Please Enter the Owner's Name"
+              />
+              {errors.ownerName && <span>*required field</span>}
+            </Grid>
 
-              <div>
-                {pricesFields.map((field, index) => (
-                  <div key={index}>
-                    <TextField
-                      id="price"
-                      inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
-                      value={field}
-                      onChange={(e) =>
-                        handlepricesFieldChange(index, e.target.value)
-                      }
-                      required
-                      label="Price"
-                      variant="filled"
-                      color="success"
-                      helperText="Please Enter Price"
-                    />
-                    <button
-                      type="button"
-                      onClick={() => handleRemovepricesField(index)}
-                      hidden={index === 0 ? true : false}
-                    >
-                      Remove
-                    </button>
-                  </div>
-                ))}
-                <button type="button" onClick={handleAddpricesField}>
-                  Add Price
-                </button>
-              </div>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                id="contactNumber"
+                fullWidth
+                inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
+                {...register("contactNumber", { required: true })}
+                label="Contact Number"
+                variant="filled"
+                color="success"
+                required
+                margin="normal"
+                helperText="Please Enter your Contact Number"
+              />
+              {errors.contactNumber && <span>*required field</span>}
+            </Grid>
 
-              <div>
-                {facFields.map((field, index) => (
-                  <div key={index}>
-                    <TextField
-                      value={field}
-                      onChange={(e) =>
-                        handlefacFieldChange(index, e.target.value)
-                      }
-                      required
-                      label="Facility"
-                      variant="filled"
-                      color="success"
-                      helperText="Please Enter Facility"
-                    />
-                    <button
-                      type="button"
-                      onClick={() => handleRemovefacField(index)}
-                      hidden={index === 0 ? true : false}
-                    >
-                      Remove
-                    </button>
-                  </div>
-                ))}
-                <button type="button" onClick={handleAddfacField}>
-                  Add Facility
-                </button>
-              </div>
-
-              <div>
-                <label htmlFor="furnishing">Furnishing</label>
-                <label htmlFor="furnished">
-                  <input
-                    type="radio"
-                    name="furnished"
-                    id="furnished"
-                    value="Furnished"
-                    {...register("furnishing")}
-                  />
-                  Furnished
-                </label>
-                <label htmlFor="semi-furnished">
-                  <input
-                    type="radio"
-                    name="semi-furnished"
-                    id="semi-furnished"
-                    value="Semi-Furnished"
-                    {...register("furnishing")}
-                  />
-                  Semi-Furnished
-                </label>
-                <label htmlFor="furnishing">
-                  <input
-                    type="radio"
-                    name="non-furnished"
-                    id="non-furnished"
-                    value="Not Furnished"
-                    {...register("furnishing")}
-                  />
-                  Non-Furnished
-                </label>
-              </div>
-
-              <div>
-                <TextField
-                  fullWidth
-                  name="noticePriod"
-                  id="noticePriod"
-                  inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
-                  {...register("noticePriod", { required: true })}
-                  label="Notice Period"
-                  variant="filled"
-                  color="success"
-                  helperText="Please Enter the Notice Period"
-                />
-                {errors.noticePeriod && <span>*required field</span>}
-              </div>
-
-              <div>
-                <TextField
-                  fullWidth
-                  {...register("address", { required: true })}
-                  id="address"
-                  label="Address"
-                  variant="filled"
-                  color="success"
-                  helperText="Please Enter your Address"
-                />
-                {errors.address && <span>*required field</span>}
-              </div>
-
-              <div>
-                <label htmlFor="occupancyType">Occupancy Type</label>
-                <label htmlFor="singleRoom">
-                  <input
-                    type="radio"
-                    name="singleRoom"
-                    id="singleRoom"
-                    value="Single Room"
-                    {...register("occupancyType")}
-                  />
-                  Single Room
-                </label>
-                <label htmlFor="doubleSharing">
-                  <input
-                    type="radio"
-                    name="doubleSharing"
-                    id="doubleSharing"
-                    value="Double Sharing"
-                    {...register("occupancyType")}
-                  />
-                  Double Sharing Room
-                </label>
-                <label htmlFor="tripleSharing">
-                  <input
-                    type="radio"
-                    name="tripleSharing"
-                    id="tripleSharing"
-                    value="Triple Sharing"
-                    {...register("occupancyType")}
-                  />
-                  Triple Sharing Room
-                </label>
-              </div>
-
-              <div>
-                <label htmlFor="tenantType">Tenant Type</label>
-                <label htmlFor="boys">
-                  <input
-                    type="radio"
-                    name="Boys"
-                    id="boys"
-                    value="Boys"
+            <Grid item xs={10} sm={6}>
+              {pricesFields.map((field, index) => (
+                <div key={index}>
+                  <TextField
+                    id="price"
+                    inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
+                    value={field}
+                    onChange={(e) =>
+                      handlepricesFieldChange(index, e.target.value)
+                    }
                     required
-                    {...register("tenantType", { required: true })}
+                    label="Price"
+                    variant="filled"
+                    color="success"
+                    helperText="Please Enter Price"
                   />
-                  Boy
-                </label>
-                <label htmlFor="girls">
-                  <input
-                    type="radio"
-                    name="girls"
-                    id="girls"
-                    value="Girls"
-                    required
-                    {...register("tenantType", { required: true })}
-                  />
-                  Girl
-                </label>
-                <label htmlFor="others">
-                  <input
-                    type="radio"
-                    name="others"
-                    id="others"
-                    value="Others"
-                    required
-                    {...register("tenantType", { required: true })}
-                  />
-                  Others
-                </label>
-                {errors.tenantType && <span>*required field</span>}
-              </div>
-
-              <div>
-                <label htmlFor="pgImages">PG Images</label>
-                <input
-                  type="file"
-                  name="pgImg"
-                  id="pgImg"
-                  accept="image/*"
-                  multiple
-                  {...register("pgImg", { required: true })}
-                  onInput={(e) => {
-                    const files = Array.from(e.target.files);
-
-                    setImages([]);
-                    setpgImgPreview([]);
-
-                    files.forEach((file) => {
-                      const reader = new FileReader();
-
-                      reader.onload = () => {
-                        if (reader.readyState === 2) {
-                          setpgImgPreview((old) => [...old, reader.result]);
-                          setImages((old) => [...old, reader.result]);
-                        }
-                      };
-
-                      reader.readAsDataURL(file);
-                    });
-                  }}
-                />
-                {errors.pgImg && <span>*required field</span>}
-                <div>
-                  {pgImgPreview.map((image, index) => (
-                    <img key={index} src={image} alt="Preview" />
-                  ))}
+                  <Button
+                    type="Button"
+                    sx={{ mt: 3, mb: 2 }}
+                    onClick={() => handleRemovepricesField(index)}
+                    hidden={index === 0 ? true : false}
+                  >
+                    Remove
+                  </Button>
                 </div>
-              </div>
-
-              <Button variant="contained" type="submit">
-                Submit
+              ))}
+              <Button
+                type="Button"
+                sx={{ border: "1px solid red", my: "1em" }}
+                onClick={handleAddpricesField}
+              >
+                Add Price
               </Button>
-            </form>
-          </div>
+            </Grid>
+
+            <Grid item xs={10} sm={6}>
+              {facFields.map((field, index) => (
+                <div key={index}>
+                  <TextField
+                    value={field}
+                    onChange={(e) =>
+                      handlefacFieldChange(index, e.target.value)
+                    }
+                    required
+                    label="Facility"
+                    variant="filled"
+                    color="success"
+                    helperText="Please Enter Facility"
+                  />
+                  <Button
+                    type="Button"
+                    onClick={() => handleRemovefacField(index)}
+                    hidden={index === 0 ? true : false}
+                  >
+                    Remove
+                  </Button>
+                </div>
+              ))}
+              <Button
+                type="Button"
+                sx={{ border: "1px solid red", my: "1em" }}
+                onClick={handleAddfacField}
+              >
+                Add Facility
+              </Button>
+            </Grid>
+
+            <Grid item xs={10} sm={6}>
+              <label htmlFor="furnishing">Furnishing</label>
+              <label htmlFor="furnished">
+                <input
+                  style={{ margin: "1rem" }}
+                  type="Radio"
+                  name="furnished"
+                  id="furnished"
+                  value="Furnished"
+                  {...register("furnishing")}
+                />
+                Furnished
+              </label>
+              <label htmlFor="semi-furnished">
+                <input
+                  style={{ margin: "1rem" }}
+                  type="Radio"
+                  name="semi-furnished"
+                  id="semi-furnished"
+                  value="Semi-Furnished"
+                  {...register("furnishing")}
+                />
+                Semi-Furnished
+              </label>
+              <label htmlFor="furnishing">
+                <input
+                  style={{ margin: "1rem" }}
+                  type="Radio"
+                  name="non-furnished"
+                  id="non-furnished"
+                  value="Not Furnished"
+                  {...register("furnishing")}
+                />
+                Non-Furnished
+              </label>
+            </Grid>
+
+            <Grid item xs={10} sm={6}>
+              <TextField
+                fullWidth
+                name="noticePriod"
+                id="noticePriod"
+                inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
+                {...register("noticePriod", { required: true })}
+                label="Notice Period"
+                variant="filled"
+                color="success"
+                helperText="Please Enter the Notice Period"
+              />
+              {errors.noticePeriod && <span>*required field</span>}
+            </Grid>
+
+            <Grid item xs={10} sm={6}>
+              <TextField
+                fullWidth
+                {...register("address", { required: true })}
+                id="address"
+                label="Address"
+                variant="filled"
+                required
+                color="success"
+                helperText="Please Enter your Address"
+              />
+              {errors.address && <span>*required field</span>}
+            </Grid>
+
+            <Grid item xs={10} sm={8}>
+              <label htmlFor="occupancyType">Occupancy Type</label>
+              <label htmlFor="singleRoom">
+                <input
+                  style={{ margin: "1rem" }}
+                  type="Radio"
+                  name="singleRoom"
+                  id="singleRoom"
+                  value="Single Room"
+                  {...register("occupancyType")}
+                />
+                Single Room
+              </label>
+              <label htmlFor="doubleSharing">
+                <input
+                  style={{ margin: "1rem" }}
+                  type="Radio"
+                  name="doubleSharing"
+                  id="doubleSharing"
+                  value="Double Sharing"
+                  {...register("occupancyType")}
+                />
+                Double Sharing Room
+              </label>
+              <label htmlFor="tripleSharing">
+                <input
+                  style={{ margin: "1rem" }}
+                  type="Radio"
+                  name="tripleSharing"
+                  id="tripleSharing"
+                  value="Triple Sharing"
+                  {...register("occupancyType")}
+                />
+                Triple Sharing Room
+              </label>
+            </Grid>
+
+            <Grid item xs={10} sm={6}>
+              <label htmlFor="tenantType">Tenant Type</label>
+              <label htmlFor="boys">
+                <input
+                  style={{ margin: "1rem" }}
+                  type="Radio"
+                  margin="5rem"
+                  name="Boys"
+                  id="boys"
+                  value="Boys"
+                  required
+                  {...register("tenantType", { required: true })}
+                />
+                Boy
+              </label>
+              <label htmlFor="girls">
+                <input
+                  style={{ margin: "1rem" }}
+                  type="Radio"
+                  name="girls"
+                  id="girls"
+                  value="Girls"
+                  required
+                  {...register("tenantType", { required: true })}
+                />
+                Girl
+              </label>
+              <label htmlFor="others">
+                <input
+                  style={{ margin: "1rem" }}
+                  type="Radio"
+                  name="others"
+                  id="others"
+                  value="Others"
+                  required
+                  {...register("tenantType", { required: true })}
+                />
+                Both
+              </label>
+              {errors.tenantType && <span>*required field</span>}
+            </Grid>
+
+            <Grid item xs={10} sm={6}>
+              <label htmlFor="pgImages">PG Images</label>
+              <input
+                required
+                style={{ margin: "1rem" }}
+                type="file"
+                name="pgImg"
+                id="pgImg"
+                accept="image/*"
+                multiple
+                {...register("pgImg", { required: true })}
+                onInput={(e) => {
+                  const files = Array.from(e.target.files);
+
+                  setImages([]);
+                  setpgImgPreview([]);
+
+                  files.forEach((file) => {
+                    const reader = new FileReader();
+
+                    reader.onload = () => {
+                      if (reader.readyState === 2) {
+                        setpgImgPreview((old) => [...old, reader.result]);
+                        setImages((old) => [...old, reader.result]);
+                      }
+                    };
+
+                    reader.readAsDataURL(file);
+                  });
+                }}
+              />
+              {errors.pgImg && <span>*required field</span>}
+              <Grid item xs={10} sm={6}>
+                {pgImgPreview.map((image, index) => (
+                  <img key={index} src={image} alt="Preview" />
+                ))}
+              </Grid>
+            </Grid>
+
+            <Button variant="contained" type="submit">
+              Submit
+            </Button>
+          </form>
+          {/* </div> */}
         </Grid>
-      </container>
+      </Container>
     </ThemeProvider>
   );
 };
