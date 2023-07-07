@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -12,23 +13,43 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Auth from "../Auth/Auth";
 import { GoogleOAuthProvider } from "@react-oauth/google";
+import { useDispatch, useSelector } from "react-redux";
+import { registerUser } from "../api";
 
 
 const defaultTheme = createTheme();
 
 export default function SignUpComp() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [backendError, setBackendError] = useState(null);
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    console.log(data);
     console.log({
       email: data.get("email"),
       password: data.get("password"),
       phonenumber : data.get("phonenumber"),
     });
+    dispatch(registerUser(data));
   };
+
+  const { isLoading, error, isAuthenticated } = useSelector(
+    (state) => state.users
+  );
+
+  useEffect(() => {
+    if (error) {
+      setBackendError(error);
+    }
+    if (isAuthenticated) {
+      navigate("/");
+    }
+  }, [error, isAuthenticated]);
 
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -100,7 +121,7 @@ export default function SignUpComp() {
                 <TextField
                   required
                   fullWidth
-                  name="phone number"
+                  name="phonenumber"
                   label="Phone Number"
                   type="phone number"
                   id="phone number"

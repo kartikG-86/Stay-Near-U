@@ -12,6 +12,7 @@ import Policy from "./Policy/Policy";
 import About from "./About/About";
 import PgDetail from "./Display cards/PgDetail";
  import SignUpComp from "./SignUp/SignUpComp";
+ import NewPg from "./SignUp/NewPg";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/policy" element={<Policy />} />
         <Route path="/aboutUs" element={<About />} />
         <Route path="/:Collegename/:pgName/details" element={<PgDetail />} />
+        <Route path="/NewPg" element= {<NewPg />} />
       </Routes>
     </>
   );
