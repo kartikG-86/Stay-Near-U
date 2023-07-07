@@ -122,7 +122,7 @@ const addPgApi = async (pgData) => {
     const url = baseUrl + '/api/pg/new';
 
     const response = await axios.post(url, pgData, config);
-    return response.data.pg;
+    return response.data;
 
   } catch (error) {
     if (error.response && error.response.data && error.response.data.message) {
