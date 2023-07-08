@@ -94,10 +94,10 @@ const NewPg = () => {
       pgData.append("address",data.address);
       pgData.append("occupancyType",data.occupancyType);
       pgData.append("tenantType",data.tenantType);
-      pgData.append("noticePriod",data.noticePriod);
+      pgData.append("noticePeriod",data.noticePeriod);
 
       pgData.append("price",JSON.stringify(pricesFields));
-      pgData.append("facilities",JSON.stringify(pricesFields));
+      pgData.append("facilities",JSON.stringify(facFields));
 
       images.forEach((image) => {
         pgData.append("pgImg", image);
@@ -110,8 +110,8 @@ const NewPg = () => {
     //     prices: JSON.stringify(pricesFields),
     //     facility: JSON.stringify(facFields),
     //   };
-
       const response = await dispatch(addPg(pgData));
+      console.log(pgData);
       if (response && response.payload && response.payload.success) {
           window.alert("Pg Added Successfully");
       }
@@ -189,17 +189,10 @@ const NewPg = () => {
             </Grid>
 
             <Grid item xs={12} sm={6}>
-              <TextField
+              <input type="number"
                 id="contactNumber"
-                fullWidth
-                inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                 {...register("contactNumber", { required: true })}
-                label="Contact Number"
-                variant="filled"
-                color="success"
                 required
-                margin="normal"
-                helperText="Please Enter your Contact Number"
               />
               {errors.contactNumber && <span>*required field</span>}
             </Grid>
@@ -207,18 +200,14 @@ const NewPg = () => {
             <Grid item xs={10} sm={6}>
               {pricesFields.map((field, index) => (
                 <div key={index}>
-                  <TextField
+                  <input type="number"
+                    name = "price"
                     id="price"
-                    inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
                     value={field}
                     onChange={(e) =>
                       handlepricesFieldChange(index, e.target.value)
                     }
                     required
-                    label="Price"
-                    variant="filled"
-                    color="success"
-                    helperText="Please Enter Price"
                   />
                   <Button
                     type="Button"
@@ -309,16 +298,10 @@ const NewPg = () => {
             </Grid>
 
             <Grid item xs={10} sm={6}>
-              <TextField
-                fullWidth
-                name="noticePriod"
-                id="noticePriod"
-                inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
-                {...register("noticePriod", { required: true })}
-                label="Notice Period"
-                variant="filled"
-                color="success"
-                helperText="Please Enter the Notice Period"
+              <input type="number"
+                name="noticePeriod"
+                id="noticePeriod"
+                {...register("noticePeriod", { required: true })}
               />
               {errors.noticePeriod && <span>*required field</span>}
             </Grid>
