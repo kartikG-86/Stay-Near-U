@@ -18,7 +18,8 @@ export const pgSlice = createSlice({
             state.error = null;
         })
         .addCase(addPg.fulfilled,(state, action) => {
-            state.pg.push(action.payload);
+            state.pg.push(action.payload.pg);
+            state.currentPg = action.payload.pg;
             state.isLoading = false;
         })
         .addCase(addPg.rejected,(state, action) => {
