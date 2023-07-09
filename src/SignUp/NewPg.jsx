@@ -111,7 +111,7 @@ const NewPg = () => {
     //     facility: JSON.stringify(facFields),
     //   };
       const response = await dispatch(addPg(pgData));
-      console.log(pgData);
+      console.log(data);
       if (response && response.payload && response.payload.success) {
           window.alert("Pg Added Successfully");
       }
