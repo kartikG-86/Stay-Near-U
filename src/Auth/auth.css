@@ -1,0 +1,60 @@
+.Auth {
+  text-align: center;
+  
+}
+
+.Auth-logo {
+ 
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Auth-logo {
+    animation: Auth-logo-spin infinite 2s linear;
+  }
+}
+
+.Auth-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Auth-link {
+  color: #61dafb;
+}
+
+@keyframes Auth-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button{
+  background-color: black;
+  padding: 5px;
+  border-radius: 1rem;
+  color:white;
+  border:none;
+  border-radius: 31px;
+  margin-bottom: 50px;
+  
+ 
+  
+}
+
+button:hover{
+  border: 2px solid white;
+}
+
+button i{
+  margin-right: 2px;
+}
